@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contactform.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora&family=Nunito&family=Patrick+Hand&family=Poppins&family=Raleway:wght@300&family=Roboto:wght@300&family=Zen+Dots&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+
+    <nav>
+        <img src="resources\binod.png" alt="logo" class="logo">
+        <a href="index.html"class="nav-link" href="">Home</a>
+        <a class="nav-link" href="">Wishlist</a>
+        <a class="nav-link" href="">Cart</a>
+        <a href=""class="nav-link" href="">About Us</a>
+        <a class="nav-link" href="">Sign In</a>
+    </nav>
+
+    <!-- CONTACT FORM -->
+
+    <div class='one'>
+        <h1>Contact Details</h1>
+    </div>
+
+    <!-- TO MAIL THE ENTERED DETAILS -->
+    <form action="mailto:abhinav.20204006@mnnit.ac.in" method="post" enctype="text/plain">  
+        
+        <!-- TO TAKE INPUTS FROM THE USER -->
+        <div class="two">
+            <p>NAME:<input type="text" name="name" required placeholder="ENTER YOUR NAME"></p>
+            <p>EMAIL:<input type="email" name="email" required placeholder="ENTER YOUR EMAIL ID  e.g. abc@xyz.com"></p>
+            <p>ADDRESS:<textarea name="address" rows=5 cols=10 required placeholder="ENTER YOUR ADDRESS"></textarea></p>
+            <p>PINCODE:<input type="number" name="pincode"></p>
+            <p>GENDER:
+
+                <!-- TO PUT GENDER OPTIONS IN A SINGLE BOX -->
+                <fieldset>
+                    <p>
+                        <input type="radio" name="gender" id="" value="male">MALE &nbsp
+                        <input type="radio" name="gender" id="" value="female">FEMALE &nbsp
+                        <input type="radio" name="gender" id="" value="transgender">TRANSGENDER
+                    </p>
+                </fieldset>
+            </p>    
+            <p>DOB:<input type="date" name="dob" id="dob" required></p>
+            <p>YOUR MESSAGE:
+                <textarea name="message" cols="10" rows="5" required placeholder="TYPE YOUR MESSAGE HERE"></textarea>
+            </p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <img src="resources\binod.png" alt="logo"class="foot-img">
+        <p class="foot-p">
+            <a href="index.html"class="foot-link" href="">Home</a> <br>
+            <a class="foot-link" href="">About Us</a> <br>
+            <a class="foot-link" href="">Report</a> <br>
+        </p>
+        <p class="foot-p a">
+            <a class="foot-link" href="">Instagram</a> <br>
+            <a class="foot-link" href="">LinkedIn</a> <br>
+            <a class="foot-link" href="">Youtube</a> <br>
+        </p>
+        <p class="foot-p a">
+            <a class="foot-link" href="">FAQ</a> <br>
+            <a class="foot-link" href="">T&C</a> <br>
+            <a class="foot-link" href="">Privacy Policy</a> <br>
+        </p>    
+    </footer>
+</body>
+</html>
